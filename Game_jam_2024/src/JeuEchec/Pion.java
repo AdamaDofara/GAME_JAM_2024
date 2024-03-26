@@ -8,7 +8,7 @@ package JeuEchec;
  *
  * @author susuf
  */
-public class Pion {
+
   
 
 import java.util.ArrayList;
@@ -161,4 +161,4 @@ public class Pion extends Piece {
     }
 }
       
-}
+

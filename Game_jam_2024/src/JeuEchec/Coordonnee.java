@@ -67,4 +67,4 @@ public class Coordonnee {
 	public String toString(){
 		return "["+x+", "+y+"]";
 	}
-}}
+}

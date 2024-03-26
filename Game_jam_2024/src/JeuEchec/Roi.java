@@ -8,8 +8,8 @@ package JeuEchec;
  *
  * @author susuf
  */
-public class Roi {
- 
+
+ import java.util.ArrayList;
 import echecs.sauvegarde.CoupPGN;
 
 
@@ -245,4 +245,4 @@ public class Roi extends Piece{
         }
     }
 
-}
+

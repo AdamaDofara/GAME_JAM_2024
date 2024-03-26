@@ -9,6 +9,7 @@ package JeuEchec;
  * @author susuf
  */
 
+import java.util.ArrayList;
 
 /**
  * Defini le comportement de la reine
