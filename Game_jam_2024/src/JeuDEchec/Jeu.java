@@ -17,8 +17,10 @@ public class Jeu {
     public void  initJeu(){//methode pour demarer tout le jeu 
          jB = new Joueur();
          jN = new Joueur();
-         initJoueur();
-        
+         table= new Plateau();
+         this.jB.initJoueur("Blanc");
+         this.jN.initJoueur("Noir");
+         this.table.initPlateau(table);
     }
     
     
