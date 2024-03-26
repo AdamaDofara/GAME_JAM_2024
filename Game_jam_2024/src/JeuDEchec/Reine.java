@@ -12,6 +12,11 @@ package JeuDEchec;
 
  
 public class Reine extends Piece {
-    
+    public Reine(int pDv, int pDa, int pDd, String c, Plateau p, int x, int y) {
+       
+        super(pDv, pDa, pDd, c, p, x, y);
+
+    }
+
 } 
 

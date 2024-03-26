@@ -12,4 +12,15 @@ public class Jeu {
     private Joueur jB; // joueur au piece noir 
     private Joueur jN;// joueur au piece white
     private Plateau table;
+    
+    
+    public void  initJeu(){//
+    
+        
+        
+    }
+    
+    
+    
+    
 }

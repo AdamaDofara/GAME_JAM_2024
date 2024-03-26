@@ -18,6 +18,11 @@ package JeuDEchec;
  * Defini le comportement de la Tour
  */
 public class Tour extends Piece{
-	
+	public Tour(int pDv, int pDa, int pDd, String c, Plateau p, int x, int y) {
+       
+        super(pDv, pDa, pDd, c, p, x, y);
+
+    }
+
 }
 
