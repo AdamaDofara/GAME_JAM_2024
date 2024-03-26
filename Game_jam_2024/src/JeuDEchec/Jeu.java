@@ -14,9 +14,10 @@ public class Jeu {
     private Plateau table;
     
     
-    public void  initJeu(){//
-    
-        
+    public void  initJeu(){//methode pour demarer tout le jeu 
+         jB = new Joueur();
+         jN = new Joueur();
+         initJoueur();
         
     }
     

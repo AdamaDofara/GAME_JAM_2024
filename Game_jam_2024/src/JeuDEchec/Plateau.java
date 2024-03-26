@@ -35,4 +35,12 @@ public void setpieceAt(int x, int y, Piece p) { // met (et potentiellement écra
       this.plateau[x][y]= p;
 
     }
+
+public void suppieceAt(int x, int y) { 
+
+      this.plateau[x][y]= null;
+
+    }
+
+
 }
