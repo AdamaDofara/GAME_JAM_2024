@@ -127,6 +127,7 @@ public class Pion extends Piece {
     public ArrayList<Coordonnee> porteDAttaque(){//
       if (this.couleur.equals("Blanc"))
      return(new ArrayList<Coordonnee>());
+	return null;
     }
     /**
      * Detecte si le pion peut etre promu

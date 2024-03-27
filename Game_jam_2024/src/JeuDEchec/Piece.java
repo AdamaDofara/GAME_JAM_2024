@@ -34,9 +34,15 @@ public class Piece {
     
     
     public void deplacer(int x , int y ){
-        String autorisation=verifier(x,y);
+    	System.out.println("aff");
+        String autorisation="Bonjour";
+        System.out.println("aff2"+autorisation);
+        autorisation=verifier(x,y);
+        
+        
         switch (autorisation){
             case "rien":
+            	System.out.println("test");
                 plateau.suppieceAt(this.x,this.y);
                 this.setx(x);
                 this.sety(y);
@@ -46,20 +52,24 @@ public class Piece {
                
                 this.bataille(plateau.getplateau()[x][y]);
                 break;
+            case "Allier":
+            	System.out.println("Position occupée par l'une de vos pièce ou position indisponible");
+            	break;
         }
         
     }
     
     public String verifier(int x , int y ){// verifie si on peut poser la piece (libre ou occupé par piece ennemie )
-        
+        System.out.println("test 2");
         Piece caseScanner=plateau.getpieceAt(x, y);
-        String result="rien";
-        if(caseScanner.getcouleur()!= this.getcouleur()){
-             result="Enemi";
-        }else if(caseScanner.getcouleur()== this.getcouleur()){
-             result="Allier";
+        if(this.getcouleur().equals(caseScanner.getcouleur())){
+             return "Enemi";
+        }else if(caseScanner==null)
+        	return "rien";
+        else{
+             return "Allier";
         }
-        return (result);
+
     }
     public void bataille(Piece autrePiece){ // va appliquer les changements de stats (combat)
         int bonnusAttaque=7;// redéfinir
@@ -118,7 +128,7 @@ public class Piece {
      return(null);
     
     }
-    public ArrayList<int [][]> porteDAttaque(){//
+    public ArrayList<Coordonnee> porteDAttaque(){//
     
      return(null);
     

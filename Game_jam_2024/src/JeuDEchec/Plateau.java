@@ -15,8 +15,9 @@ package JeuDEchec;
 public class Plateau {
 
     private Piece[][] plateau = new Piece[8][8];
+    
 
-    public void initPlateau(Plateau p) {   // pour l'instant toute les piece ont les meme stat de départ
+	public void initPlateau(Plateau p) {   // pour l'instant toute les piece ont les meme stat de départ
         for (int j = 0; j < 8; j++) {
             int i = 7;                     // corespond à la 8 eme ligne 
             switch (j) {
@@ -110,12 +111,14 @@ public class Plateau {
 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                if (this.plateau[i][j].couleur.equals(couleur) && this.plateau[i][j] instanceof Roi) {
+            	if (this.plateau[i][j]!=null) {
+            		if (this.plateau[i][j].couleur.equals(couleur) && this.plateau[i][j] instanceof Roi) {
 
-                    vivant = true ;
-              
-                }
-
+                        vivant = true ;
+                  
+                    }
+				}
+            	
             }
         }
 return(vivant);
@@ -143,5 +146,16 @@ return(vivant);
         // attention il faut peut etre employer la fonction clone 
         return (this.plateau);
 
+    }
+    
+    public void afficherPlateau() {
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				if (plateau[i][j] != null) {
+					System.out.print(plateau[i][j].getcouleur()+" ");
+				}
+			}
+			System.out.println("");
+		}
     }
 }
