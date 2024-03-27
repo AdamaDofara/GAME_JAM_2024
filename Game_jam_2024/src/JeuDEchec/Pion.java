@@ -33,7 +33,7 @@ public class Pion extends Piece {
 		int two_step;
 		Piece target = plateau.getpieceAt(xPosition, yPosition);
 		
-		if (this.getCouleur() == "Noir"){
+		if ("Noir".equals(this.getcouleur())){
 			one_step = 1;
 			two_step = 2;
 		}
