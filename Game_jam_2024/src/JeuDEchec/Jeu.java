@@ -23,7 +23,14 @@ public class Jeu {
          this.table.initPlateau(table);
     }
     
+    public void tourDeJeu(){ // pour la console 
+    while(table.roiEstVivant("Blanc")&&table.roiEstVivant("Noir")){
     
+    
+    }
+    
+    
+}
     
     
 }
