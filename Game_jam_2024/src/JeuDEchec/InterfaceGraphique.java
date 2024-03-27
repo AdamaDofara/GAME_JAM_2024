@@ -3,13 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package JeuDEchec;
-
+import javax.swing.ImageIcon;
 /**
  *
  * @author susuf
  */
 public class InterfaceGraphique extends javax.swing.JFrame {
 
+    private Jeu jeu = new Jeu();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Creates new form InterfaceGraphique
      */
@@ -75,6 +87,11 @@ public class InterfaceGraphique extends javax.swing.JFrame {
                 new InterfaceGraphique().setVisible(true);
             }
         });
+        
+        
+        
+        
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
