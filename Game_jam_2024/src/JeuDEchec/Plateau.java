@@ -120,6 +120,22 @@ public class Plateau {
         }
 return(vivant);
     }
+    
+    public void estVivant() { //parcours le tableau pour savoir si chaque piece est vivante
+       
+
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (this.plateau[i][j].pointDeVie >=0) {
+
+                    this.suppieceAt(i, j);
+              
+                }
+
+            }
+        }
+
+    }
 
     public Piece getpieceAt(int x, int y) {// recup sans l enlever du plateau la piece contenu a une position [x][y]
         // attention il faut peut etre employer la fonction clone 
