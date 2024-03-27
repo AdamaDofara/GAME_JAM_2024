@@ -25,7 +25,7 @@ public class Pion extends Piece {
     public Pion(int pDv, int pDa, int pDd, String c, Plateau p, int x, int y) { // 
        
         super(pDv, pDa, pDd, c, p, x, y);
-        
+        this.id=this.couleur.charAt(0)+"P";//fais l'id du pion
             
     }
     private boolean premierCoup = true;

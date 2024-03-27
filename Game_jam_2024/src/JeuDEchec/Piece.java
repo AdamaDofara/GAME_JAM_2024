@@ -19,7 +19,7 @@ public class Piece {
     protected Plateau plateau;
     protected int x;
     protected int y;
-
+    String id;
     public Piece(int pDv, int pDa, int pDd, String c, Plateau p, int x, int y) {
         this.vide=false;
         this.pointDeVie = pDv;
@@ -124,7 +124,11 @@ public class Piece {
     
     }
     
-    
+    public String getId() {
+
+        return (this.id);
+
+    }
     
 
     public int getpointDevie() {

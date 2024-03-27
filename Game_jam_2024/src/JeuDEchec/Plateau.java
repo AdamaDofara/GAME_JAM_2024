@@ -154,7 +154,17 @@ return(vivant);
         this.plateau[x][y] = null;
 
     }
+public void Statistique(int x, int y){
+        Piece p=this.getpieceAt(x, y);
+        System.out.println("Appartenance"+p.getcouleur()+"\n");
+        System.out.println("ID:"+p.getId());
+        System.out.println("Poins de Vie:"+p.getpointDevie()+"\n");
+        System.out.println("Poins d'attaque:"+p.getpointDAttaque()+"\n");
+        System.out.println("Poins de Defense:"+p.getpointDeDefense()+"\n");
+    }
 
+
+    
     public Piece[][] getplateau() {// recup sans l enlever du plateau la piece contenu a une position [x][y]
         // attention il faut peut etre employer la fonction clone 
         return (this.plateau);
