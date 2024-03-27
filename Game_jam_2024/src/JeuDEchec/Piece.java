@@ -113,7 +113,7 @@ public class Piece {
     
     } 
     
-    public ArrayList<int [][]> deplacementPossible(){//
+    public ArrayList<Coordonnee> deplacementPossible(){//
     
      return(null);
     
