@@ -31,4 +31,13 @@ public class Coordonnee {
     public void sety(int a){
         this.y=a;
     }
+    public boolean equals(Coordonnee autrecoord ){
+        
+         return(this.x==autrecoord.x &&this.y==autrecoord.y);
+         
+         }  
+    
+    
+    
+    
 }

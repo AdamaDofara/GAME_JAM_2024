@@ -13,6 +13,10 @@ public class Jeu {
     private Joueur jN;// joueur au piece white
     private Plateau table;
     
+    public Jeu(){
+    this.initJeu();
+    
+    }
     
     public void  initJeu(){//methode pour demarer tout le jeu 
          jB = new Joueur();
