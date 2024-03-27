@@ -28,7 +28,7 @@ public class Pion extends Piece {
         
             
     }
-    public ArrayList<int [][]> deplacementPossible(int xPosition, int yPosition){//
+    public ArrayList<Coordoner> deplacementPossible(int xPosition, int yPosition){//
         int one_step;
 		int two_step;
 		Piece target = plateau.getpieceAt(xPosition, yPosition);
@@ -45,7 +45,7 @@ public class Pion extends Piece {
 		// Moving one step forward
 		if (xPosition - this.getx() == one_step){
 			// Straight
-			if (yPosition == this.getYLocation() && target == null){
+			if (yPosition == this.gety() && target == null){
 				return true;
 			}
 			// Diagonally
